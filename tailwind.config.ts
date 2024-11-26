@@ -11,6 +11,8 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        gradientStart: "var(--gradient-start)",
+        gradientEnd: "var(--gradient-end)",
       },
     },
   },
