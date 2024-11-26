@@ -7,6 +7,9 @@
   --foreground: #171717;
   --gradient-start: #ff7e5f;
   --gradient-end: #feb47b;
+  --weather-card-gradient-start: #ececec;
+  --weather-card-gradient-end: #c0c0c0;
+  --weather-card-shadow: rgba(0, 0, 0, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +18,9 @@
     --foreground: #ededed;
     --gradient-start: #410086;
     --gradient-end: #2575fc;
+    --weather-card-gradient-start: #17191a;
+    --weather-card-gradient-end: #171a1b;
+    --weather-card-shadow: rgba(0, 0, 0, 0.15);
   }
 }
 
