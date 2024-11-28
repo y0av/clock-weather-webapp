@@ -3,6 +3,7 @@ import { WeatherData } from '@/app/api/weather/types';
 import { useEffect, useState } from 'react'
 import Weather from './weather';
 
+export const revalidate = 60
 
 const WeatherWithLocation = () => {
     const [weather, setWeather] = useState<WeatherData>();
@@ -35,7 +36,12 @@ const WeatherWithLocation = () => {
                     setLocation({ latitude, longitude });
                 },
                 (error) => {
-                    setError(`Geolocation error: ${error.message}`);
+                    setLocation({
+                        latitude: parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LATITUDE || '0'),
+                        longitude: parseFloat(process.env.NEXT_PUBLIC_DEFAULT_LONGITUDE || '0')
+                    });
+                    console.log(`Geolocation error: ${error.message}`);
+                    //setError(`Geolocation error: ${error.message}`);
                 }
             );
         }
