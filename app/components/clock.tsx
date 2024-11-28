@@ -32,7 +32,7 @@ export default function Clock() {
 
     return (
         <div className="flex flex-col space-y-4 items-center">
-            <h1 className="text-8xl font-bold tracking-tight">{currentTime}</h1>
+            <h1 className="text-8xl font-bold tracking-tight text-[var(--background)]">{currentTime}</h1>
             <p className="text-xl text-[var(--clock-subtitle)]">{currentDate}</p>
         </div>
     );
