@@ -7,7 +7,7 @@ export const revalidate = 60
 
 const WeatherWithLocation = () => {
     const [weather, setWeather] = useState<WeatherData>();
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
     const [location, setLocation] = useState<{ latitude: number, longitude: number } | null>(null);
 
@@ -54,7 +54,7 @@ const WeatherWithLocation = () => {
     }, [location]);
 
     if (error) return <div>Error: {error}</div>;
-    if (loading) return <div>Loading...</div>;
+    if (loading) return <div className="flex justify-center items-center h-full w-full"><div className="lds-dual-ring opacity-5"></div></div>;
 
     return weather ? <Weather weatherData={weather} /> : <div></div>;
 }
