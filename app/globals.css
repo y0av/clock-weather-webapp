@@ -5,6 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --clock-subtitle: #38393b;
   --gradient-start: #ff7e5f;
   --gradient-end: #feb47b;
   --weather-card-gradient-start: #ececec;
@@ -16,6 +17,7 @@
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --clock-subtitle: #9ca3af;
     --gradient-start: #410086;
     --gradient-end: #2575fc;
     --weather-card-gradient-start: #17191a;

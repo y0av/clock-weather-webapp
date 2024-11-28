@@ -27,7 +27,7 @@ export const WeatherWidget: React.FC<WeatherWidgetProps> = ({ weatherData }) => 
 
             <p className="text-lg capitalize mb-4">{weatherData.weather[0].description}</p>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 space-y-4">
                 <div className="space-y-2">
                     <p>High: {Math.round(weatherData.main.temp_max)}°C</p>
                     <p>Low: {Math.round(weatherData.main.temp_min)}°C</p>
