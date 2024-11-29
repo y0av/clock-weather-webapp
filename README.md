@@ -40,6 +40,9 @@ NEXT_PUBLIC_DEFAULT_LONGITUDE=
 
 ## Attribution
 
- - Favicon: [Iconic Panda](https://www.flaticon.com/authors/iconic-panda)
- - Fonts: Geist Sans & Geist Mono
+- Favicon: [Iconic Panda](https://www.flaticon.com/authors/iconic-panda)
+- Fonts: Geist Sans & Geist Mono
 
+## Notes
+
+- I used this [repo](https://github.com/pgnunes/web-screen-saver/) to set my page as a screensaver on my media machine
