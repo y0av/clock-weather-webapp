@@ -7,14 +7,14 @@ export const dynamic = "force-dynamic";
 function getThemeClass() {
   const hour = new Date().getHours();
 
-  if (hour >= 5 && hour < 7) return 'theme-dawn';
-  if (hour >= 7 && hour < 10) return 'theme-morning';
-  if (hour >= 10 && hour < 14) return 'theme-noon';
-  if (hour >= 14 && hour < 17) return 'theme-afternoon';
-  if (hour >= 17 && hour < 19) return 'theme-evening';
-  if (hour >= 19 && hour < 21) return 'theme-dusk';
-  if (hour >= 21 && hour < 24) return 'theme-night';
-  if (hour >= 0 && hour < 5) return 'theme-midnight';
+  if (hour >= 3 && hour < 5) return 'theme-dawn';
+  if (hour >= 5 && hour < 8) return 'theme-morning';
+  if (hour >= 8 && hour < 12) return 'theme-noon';
+  if (hour >= 12 && hour < 15) return 'theme-afternoon';
+  if (hour >= 15 && hour < 17) return 'theme-evening';
+  if (hour >= 17 && hour < 19) return 'theme-dusk';
+  if (hour >= 19 && hour < 22) return 'theme-night';
+  if (hour >= 22 || hour < 3) return 'theme-midnight';
   return 'theme-night';
 }
 
