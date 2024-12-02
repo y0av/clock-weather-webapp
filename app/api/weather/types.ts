@@ -44,3 +44,15 @@ export type WeatherData = {
     name: string;
     cod: number;
 };
+
+export type HourlyData = {
+    dt: number;
+    main: {
+        temp: number;
+        humidity: number;
+    };
+    weather: Array<{
+        description: string;
+        icon: string;
+    }>;
+}

@@ -1,12 +1,13 @@
 'use client';
-import { WeatherData } from "../../api/weather/types";
+import { WeatherData, HourlyData } from "../../api/weather/types";
 import Image from 'next/image';
 
 interface WeatherWidgetProps {
     weatherData: WeatherData;
+    hourlyData: HourlyData[];
 }
 
-export const WeatherWidget: React.FC<WeatherWidgetProps> = ({ weatherData }) => {
+export const WeatherWidget: React.FC<WeatherWidgetProps> = ({ weatherData, hourlyData }) => {
 
     return (
         <div className="bg-gradient-to-r from-[var(--weather-card-gradient-start)] to-[var(--weather-card-gradient-end)] rounded-xl p-6 text-[var(--foreground)] w-[350px] shadow-lg">
@@ -39,6 +40,32 @@ export const WeatherWidget: React.FC<WeatherWidgetProps> = ({ weatherData }) => 
                     <p>Visibility: {weatherData.visibility / 1000} km</p>
                 </div>
             </div> */}
+
+            <div className="mt-4 border-t border-white/20 pt-4 opacity-50">
+                <div className="grid grid-cols-5 gap-2">
+                    {hourlyData.slice(0, 5).map((hour) => (
+                        <div key={hour.dt} className="text-center">
+                            <p className="text-xs font-medium">
+                                {new Date(hour.dt * 1000).toLocaleTimeString('en-US', {
+                                    hour: 'numeric',
+                                    hour12: false
+                                }).replace(/^0/, '')}:00
+                            </p>
+                            <div className="flex items-center justify-center">
+                                <p className="text-sm font-bold">{Math.round(hour.main.temp)}°</p>
+                                <Image
+                                    src={`http://openweathermap.org/img/wn/${hour.weather[0].icon}.png`}
+                                    alt={hour.weather[0].description}
+                                    width={20}
+                                    height={20}
+                                    className="inline-block"
+                                />
+                            </div>
+                            {/* <p className="text-xs capitalize">{hour.weather[0].description}</p> */}
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     );
 };

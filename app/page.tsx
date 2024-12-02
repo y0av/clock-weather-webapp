@@ -13,7 +13,7 @@ export default function Home() {
         <div className="h-[148px] flex items-center">
           <Clock />
         </div>
-        <div className="h-[184px] min-w-[350px] flex items-center">
+        <div className="h-[253px] min-w-[350px] flex items-center">
           <WeatherWithLocation />
         </div>
       </div>
