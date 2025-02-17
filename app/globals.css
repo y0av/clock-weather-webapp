@@ -63,52 +63,83 @@
 
 /* Evening theme (5pm-7pm) */
 .theme-evening {
-  --background: #1a1b1f;
-  --foreground: #ffffff;
+  --background: #3498db;
+  --foreground: #3498db;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #1a1b1f;
+  --foreground: #afafaf;
   --clock-subtitle: #505050;
   --gradient-start: #7ea1c5;
   --gradient-end: #318bc7;
   --weather-card-gradient-start: #302f31;
   --weather-card-gradient-end: #212027;
-  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  --weather-card-shadow: rgba(0, 0, 0, 0.25); */
 }
 
 /* Dusk theme (7pm-9pm) */
 .theme-dusk {
-  --background: #1a1b1f;
+  --background: #7ea1c5;
+  --foreground: #7ea1c5;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #1a1b1f;
   --foreground: #ffffff;
   --clock-subtitle: #a0a0a0;
   --gradient-start: #2c3e50;
   --gradient-end: #3498db;
   --weather-card-gradient-start: #2d2d2d;
   --weather-card-gradient-end: #1a1a1a;
-  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  --weather-card-shadow: rgba(0, 0, 0, 0.25); */
 }
 
 /* Night theme (9pm-12am) */
 .theme-night {
-  --background: #0a0a0a;
+  --background: #410086;
+  --foreground: #410086;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #0a0a0a;
   --foreground: #ededed;
   --clock-subtitle: #9ca3af;
   --gradient-start: #410086;
   --gradient-end: #2575fc;
   --weather-card-gradient-start: #17191a;
   --weather-card-gradient-end: #171a1b;
-  --weather-card-shadow: rgba(0, 0, 0, 0.15);
+  --weather-card-shadow: rgba(0, 0, 0, 0.15); */
 }
 
 /* Midnight theme (12am-5am) */
 .theme-midnight {
-  --background: #121212;
+  --background: #151515;
+  --foreground: #151515;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #121212;
   --foreground: #ffffff;
   --clock-subtitle: #888888;
   --gradient-start: #141e30;
   --gradient-end: #243b55;
   --weather-card-gradient-start: #222222;
   --weather-card-gradient-end: #151515;
-  --weather-card-shadow: rgba(0, 0, 0, 0.3);
+  --weather-card-shadow: rgba(0, 0, 0, 0.3); */
 }
-
 
 /* @media (prefers-color-scheme: dark) {
   :root {
@@ -128,7 +159,6 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
 
 /* loading spinner */
 
