@@ -27,38 +27,62 @@
 
 /* Morning theme (7am-10am) */
 .theme-morning {
-  --background: #ffffff;
+  --background: #ff7e5f;
+  --foreground: #feb47b;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #ffffff;
   --foreground: #171717;
   --clock-subtitle: #38393b;
   --gradient-start: #ff7e5f;
   --gradient-end: #feb47b;
   --weather-card-gradient-start: #ececec;
   --weather-card-gradient-end: #c0c0c0;
-  --weather-card-shadow: rgba(0, 0, 0, 0.15);
+  --weather-card-shadow: rgba(0, 0, 0, 0.15);*/
 }
 
 /* Noon theme (10am-2pm) */
 .theme-noon {
-  --background: #ffffff;
+  --background: #f6d365;
+  --foreground: #fda085;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #ffffff;
   --foreground: #000000;
   --clock-subtitle: #2c2c2c;
   --gradient-start: #f6d365;
   --gradient-end: #fda085;
   --weather-card-gradient-start: #f8f8f8;
   --weather-card-gradient-end: #dadada;
-  --weather-card-shadow: rgba(0, 0, 0, 0.2);
+  --weather-card-shadow: rgba(0, 0, 0, 0.2); */
 }
 
 /* Afternoon theme (2pm-5pm) */
 .theme-afternoon {
-  --background: #fdfbf7;
+  --background: #d4a5ff;
+  --foreground: #8a2be2;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+  /*   --background: #fdfbf7;
   --foreground: #1a1a1a;
   --clock-subtitle: #454545;
   --gradient-start: #d4a5ff;
   --gradient-end: #8a2be2;
   --weather-card-gradient-start: #f5f5f5;
   --weather-card-gradient-end: #c8c8c8;
-  --weather-card-shadow: rgba(0, 0, 0, 0.17);
+  --weather-card-shadow: rgba(0, 0, 0, 0.17); */
 }
 
 /* Evening theme (5pm-7pm) */
