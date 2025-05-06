@@ -15,14 +15,22 @@
 
 /* Dawn theme (5am-7am) */
 .theme-dawn {
-  --background: #f5f3f4;
+  --background: #ff9a9e;
+  --foreground: #fad0c4;
+  --clock-subtitle: #505050;
+  --gradient-start: #000000;
+  --gradient-end: #000000;
+  --weather-card-gradient-start: #000000;
+  --weather-card-gradient-end: #000000;
+  --weather-card-shadow: rgba(0, 0, 0, 0.25);
+/*   --background: #f5f3f4;
   --foreground: #2b2b2b;
   --clock-subtitle: #53585f;
   --gradient-start: #ff9a9e;
   --gradient-end: #fad0c4;
   --weather-card-gradient-start: #f7f7f7;
   --weather-card-gradient-end: #e3e3e3;
-  --weather-card-shadow: rgba(0, 0, 0, 0.1);
+  --weather-card-shadow: rgba(0, 0, 0, 0.1); */
 }
 
 /* Morning theme (7am-10am) */
